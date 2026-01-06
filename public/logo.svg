@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="95" fill="#1a2744"/>
+  <circle cx="100" cy="100" r="85" fill="#fff"/>
+  
+  <!-- Washington Monument silhouette -->
+  <path d="M100 25 L108 120 L92 120 Z" fill="#1a2744"/>
+  
+  <!-- Stars -->
+  <circle cx="70" cy="40" r="5" fill="#c41e3a"/>
+  <circle cx="100" cy="30" r="5" fill="#c41e3a"/>
+  <circle cx="130" cy="40" r="5" fill="#c41e3a"/>
+  
+  <!-- STEM Text -->
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    <tspan fill="#22c55e">S</tspan>
+    <tspan fill="#06b6d4">T</tspan>
+    <tspan fill="#f97316">E</tspan>
+    <tspan fill="#2563eb">M</tspan>
+  </text>
+  
+  <!-- Net Text -->
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a2744">Net</text>
+  
+  <!-- DC Text -->
+  <text x="100" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#c41e3a">DC</text>
+</svg>
+
