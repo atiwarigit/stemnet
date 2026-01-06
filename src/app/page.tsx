@@ -233,6 +233,14 @@ export default function Home() {
 
             {/* Right Column - Hero Visual */}
             <div className="relative animate-fade-in-up-delay-2">
+              {/* Featured Event Badge */}
+              <div className="text-center mb-4">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-red to-gold text-white px-6 py-2 rounded-full text-sm md:text-base font-bold uppercase tracking-wider shadow-lg">
+                  <span className="animate-pulse">⭐</span>
+                  Upcoming Event
+                  <span className="animate-pulse">⭐</span>
+                </span>
+              </div>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/poster.png"
