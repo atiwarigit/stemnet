@@ -33,7 +33,7 @@ import {
   Heart,
   Lightbulb,
   Cpu,
-  Home,
+  Home as HomeIcon,
   Scale,
   Rocket,
   ArrowRight,
@@ -115,7 +115,7 @@ const stemnetDivisions = [
     bgColor: "from-red/20 to-red/10",
   },
   {
-    icon: Home,
+    icon: HomeIcon,
     name: "Housing & Community Division",
     description: "Place-based STEM activation, community stability, partnerships with housing authorities and anchors.",
     color: "text-stem-orange",
@@ -161,7 +161,7 @@ const partnerCategories = [
     subject: "Technology Partner Inquiry",
   },
   {
-    icon: Home,
+    icon: HomeIcon,
     name: "Community & Housing Partners",
     description: "Resident engagement, place-based activation",
     interest: "partner" as const,
