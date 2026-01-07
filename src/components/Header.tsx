@@ -15,10 +15,11 @@ import { Menu, X } from "lucide-react";
 const navItems = [
   { label: "Event", href: "#event" },
   { label: "What to Expect", href: "#expect" },
-  { label: "Mission", href: "#mission" },
-  { label: "Who Should Attend", href: "#audience" },
+  { label: "Ecosystem", href: "#ecosystem" },
+  { label: "STEMNet in Action", href: "#action" },
+  { label: "Pathways", href: "#pathways" },
+  { label: "Partners", href: "#partners" },
   { label: "Get Involved", href: "#involve" },
-  { label: "Updates", href: "#updates" },
   { label: "Contact", href: "#contact" },
 ];
 
