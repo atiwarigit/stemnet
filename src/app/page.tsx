@@ -198,8 +198,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CTA Buttons */}
+              {/* CTA Buttons - Mobile: Only Register, Desktop: All buttons */}
               <div className="flex flex-wrap gap-4 mb-6">
+                {/* Register Now - Always visible */}
                 <a
                   href="https://www.eventbrite.com/e/dc-stemnet-expo-test-tickets-123456789"
                   target="_blank"
@@ -212,18 +213,22 @@ export default function Home() {
                     Register Now
                   </Button>
                 </a>
-                <CalendarModal
-                  trigger={
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold px-8 py-6 text-lg btn-lift"
-                    >
-                      Save the Date
-                    </Button>
-                  }
-                />
-                <Link href="#involve">
+                {/* Save the Date - Desktop only */}
+                <div className="hidden md:block">
+                  <CalendarModal
+                    trigger={
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold px-8 py-6 text-lg btn-lift"
+                      >
+                        Save the Date
+                      </Button>
+                    }
+                  />
+                </div>
+                {/* Get Involved - Desktop only */}
+                <Link href="#involve" className="hidden md:block">
                   <Button
                     size="lg"
                     variant="outline"
