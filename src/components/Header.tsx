@@ -50,29 +50,29 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4">
-          {/* Mobile Header - Centered Logo */}
+          {/* Mobile Header - Logo left, Menu right */}
           <div className="lg:hidden flex items-center justify-between">
-            {/* Empty div for spacing */}
-            <div className="w-10"></div>
-            
-            {/* Centered Logo */}
+            {/* Logo */}
             <button
               onClick={scrollToTop}
-              className="hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <Image
                 src="/logo-t.png"
                 alt="DC STEMNet Expo"
-                width={70}
-                height={70}
-                className="w-16 h-16 object-contain"
+                width={56}
+                height={56}
+                className="w-14 h-14 object-contain"
               />
+              <span className="font-bold text-navy text-base">
+                STEMNet
+              </span>
             </button>
             
             {/* Menu Button */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="w-10 h-10">
+                <Button variant="ghost" size="icon" className="w-11 h-11 border border-navy/20 rounded-lg">
                   <Menu className="h-6 w-6 text-navy" />
                   <span className="sr-only">Open menu</span>
                 </Button>
