@@ -200,11 +200,24 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 mb-6">
+                <a
+                  href="https://www.eventbrite.com/e/dc-stemnet-expo-test-tickets-123456789"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    size="lg"
+                    className="bg-red hover:bg-red-dark text-white font-bold px-8 py-6 text-lg btn-lift"
+                  >
+                    Register Now
+                  </Button>
+                </a>
                 <CalendarModal
                   trigger={
                     <Button
                       size="lg"
-                      className="bg-red hover:bg-red-dark text-white font-bold px-8 py-6 text-lg btn-lift"
+                      variant="outline"
+                      className="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold px-8 py-6 text-lg btn-lift"
                     >
                       Save the Date
                     </Button>
@@ -214,7 +227,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold px-8 py-6 text-lg btn-lift"
+                    className="border-2 border-stem-green text-stem-green hover:bg-stem-green hover:text-white font-bold px-8 py-6 text-lg btn-lift"
                   >
                     Get Involved
                   </Button>
@@ -256,15 +269,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust / Proof Strip */}
-      <section className="py-10 bg-navy text-white">
+      {/* Partners Section */}
+      <section id="partners" className="py-12 bg-navy text-white">
         <div className="container mx-auto px-4">
-          <p className="text-center text-lg md:text-xl lg:text-2xl font-medium">
+          <p className="text-center text-lg md:text-xl lg:text-2xl font-medium mb-6">
             In collaboration with education, workforce, veteran, and community
             partners.
           </p>
-          <p className="text-center text-sm mt-3 opacity-70">
-            Partner logos coming soon
+          
+          {/* Partner Logos Placeholder */}
+          <div className="flex flex-wrap justify-center items-center gap-8 mt-8">
+            {/* Placeholder partner slots - will be updated periodically */}
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div
+                key={i}
+                className="w-32 h-16 bg-white/10 rounded-lg flex items-center justify-center border border-white/20"
+              >
+                <span className="text-white/50 text-xs">Partner {i}</span>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-center text-sm mt-6 opacity-70">
+            Partner logos updated periodically
           </p>
         </div>
       </section>
@@ -322,12 +349,10 @@ export default function Home() {
                   Our Mission
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  STEMNet is a trust-centered community initiative designed to
-                  empower students, families, and underserved populations
-                  through STEM, workforce development, and emerging technology.
-                  By bridging the gap between education and real-world
-                  application, STEMNet creates opportunities for growth,
-                  innovation, and community building.
+                  STEMNet&apos;s mission is to co-create safe, trust-centered, and opportunity-driven pathways
+                  that unite education, workforce development, innovative excellence, and community
+                  leadership—empowering communities to envision and achieve prosperity through
+                  collaborative revitalization and comprehensive community development.
                 </p>
               </CardContent>
             </Card>
@@ -340,11 +365,9 @@ export default function Home() {
                   Our Vision
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  A world where every community—regardless of zip code—has
-                  equitable access to STEM education, mentorship, and career
-                  pathways. STEMNet envisions thriving neighborhoods where
-                  technology serves the people and innovation is driven by the
-                  community.
+                  We envision communities where technology, education, and innovation are accessible to
+                  all, ensuring residents advance alongside development rather than being displaced by
+                  it—building long-term opportunity through collaboration and leadership.
                 </p>
               </CardContent>
             </Card>
@@ -398,7 +421,10 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
               Get Involved
             </h2>
-            <p className="text-xl text-red font-bold">Together We Build.</p>
+            <p className="text-xl text-red font-bold mb-4">Together We Build.</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Be part of a growing ecosystem connecting education, innovation, and workforce opportunity.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -414,13 +440,15 @@ export default function Home() {
                 <p className="text-muted-foreground mb-6">
                   Free. Family-friendly. Hands-on.
                 </p>
-                <CalendarModal
-                  trigger={
-                    <Button className="w-full bg-stem-green hover:bg-stem-green/90 text-white font-bold py-6 btn-lift">
-                      Save the Date
-                    </Button>
-                  }
-                />
+                <a
+                  href="https://www.eventbrite.com/e/dc-stemnet-expo-test-tickets-123456789"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-stem-green hover:bg-stem-green/90 text-white font-bold py-6 btn-lift">
+                    Register Now
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 

@@ -16,11 +16,13 @@ const navItems = [
   { label: "Event", href: "#event" },
   { label: "What to Expect", href: "#expect" },
   { label: "Mission", href: "#mission" },
-  { label: "Who Should Attend", href: "#audience" },
+  { label: "Partners", href: "#partners" },
   { label: "Get Involved", href: "#involve" },
   { label: "Updates", href: "#updates" },
   { label: "Contact", href: "#contact" },
 ];
+
+const EVENTBRITE_URL = "https://www.eventbrite.com/e/dc-stemnet-expo-test-tickets-123456789";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -80,11 +82,11 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Link href="#event">
+            <a href={EVENTBRITE_URL} target="_blank" rel="noopener noreferrer">
               <Button className="bg-red hover:bg-red-dark text-white btn-lift font-semibold">
-                Save the Date
+                Register Now
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu */}
@@ -125,11 +127,11 @@ export default function Header() {
                 </nav>
                 <div className="mt-auto pt-6 flex flex-col gap-3">
                   <SheetClose asChild>
-                    <Link href="#event">
+                    <a href={EVENTBRITE_URL} target="_blank" rel="noopener noreferrer">
                       <Button className="w-full bg-red hover:bg-red-dark text-white font-semibold py-6">
-                        Save the Date
+                        Register Now
                       </Button>
-                    </Link>
+                    </a>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="#involve">
@@ -147,11 +149,11 @@ export default function Header() {
 
       {/* Mobile Sticky Bottom CTA Bar */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 p-3 flex gap-2">
-        <Link href="#event" className="flex-1">
+        <a href={EVENTBRITE_URL} target="_blank" rel="noopener noreferrer" className="flex-1">
           <Button className="w-full bg-red hover:bg-red-dark text-white font-semibold">
-            Save the Date
+            Register Now
           </Button>
-        </Link>
+        </a>
         <Link href="#involve" className="flex-1">
           <Button variant="outline" className="w-full border-navy text-navy hover:bg-navy hover:text-white font-semibold">
             Get Involved
